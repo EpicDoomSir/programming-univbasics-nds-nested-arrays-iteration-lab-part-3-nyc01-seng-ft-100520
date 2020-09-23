@@ -7,7 +7,9 @@ def join_nested_strings(src)
   while counter < src.size do
     inner_counter = 0
     while inner_counter < src[counter].size do
-      if src[counter][inner_counter].class
+      if src[counter][inner_counter].is_a?(String)
+        all_words.concat
+      end
       inner_counter += 1
     end
     counter += 1
